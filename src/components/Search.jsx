@@ -21,7 +21,6 @@ const Search = ({ onSearchChange }) => {
           }),
         };
       })
-      .then((response) => console.log(response))
       .catch((err) => console.error(err));
   };
 
@@ -31,13 +30,14 @@ const Search = ({ onSearchChange }) => {
   };
 
   return (
-    <div>
+    <div className="">
       <AsyncPaginate
         placehikder="Procurar"
         debounceTimeout={600}
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
+        className="py-2"
       />
     </div>
   );
