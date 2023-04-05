@@ -24,28 +24,21 @@ const Forecast = ({ data }) => {
   );
 
   return (
-    <div className="flex flex-col space-y-6 w-full max-w-screen-sm bg-white p-10  mt-10 rounded-xl ring-8 ring-white ring-opacity-40">
-      <label className="title text-center font-bold text-xl">Dias</label>
+    <div className="flex flex-col space-y-6 w-full max-w-screen-sm bg-white p-10  mt-10 rounded ">
+      <label className=" text-center font-bold text-3xl">Semana</label>
       <Accordion allowZeroExpanded>
         {data.list.slice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
             <AccordionItemHeading>
               <AccordionItemButton>
-                <div className="daily-item">
-                  <img
-                    src={`icons/${item.weather[0].icon}.png`}
-                    className="icon-small"
-                    alt=""
-                  />
-                </div>
-                <div class="flex justify-between items-center">
-                  <span class="font-semibold text-lg w-1/4">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-lg w-1/4">
                     {forecastDays[idx]}
                   </span>
-                  <div class="flex items-center justify-end w-1/4 pr-10">
-                    <span class="font-semibold">{item.main.humidity}</span>
+                  <div className="flex items-center justify-end w-1/4 pr-10">
+                    <span className="font-semibold">{item.main.humidity}</span>
                     <svg
-                      class="w-6 h-6 fill-current ml-1"
+                      className="w-6 h-6 fill-current ml-1"
                       viewBox="0 0 16 20"
                       version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
@@ -55,17 +48,12 @@ const Forecast = ({ data }) => {
                       </g>
                     </svg>
                   </div>
-                  <svg
-                    class="h-8 w-8 fill-current w-1/4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                  >
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z" />
-                  </svg>
-                  <span class="font-semibold text-lg w-1/4 text-right">
+                  <img
+                    src={`icons/${item.weather[0].icon}.png`}
+                    className="w-9"
+                    alt=""
+                  />
+                  <span className="font-semibold text-lg w-1/4 text-right">
                     {Math.round(item.main.temp_max)}°C /{" "}
                     {Math.round(item.main.temp_min)}°C
                   </span>
@@ -73,32 +61,26 @@ const Forecast = ({ data }) => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <div className="daily-details-grid">
-                <label className="description">
-                  {item.weather[0].description}
-                </label>
-                <div className="daily-details-grid-item">
-                  <label>Pressure:</label>
+              <div className="pb-8">
+                <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="pb-1 flex justify-between items-center">
+                  <label className="font-semibold">Pressão:</label>
                   <label>{item.main.pressure}</label>
                 </div>
-                <div className="daily-details-grid-item">
-                  <label>Humidity:</label>
+                <div className="pb-1 flex justify-between items-center">
+                  <label className="font-semibold">Umidade:</label>
                   <label>{item.main.humidity}</label>
                 </div>
-                <div className="daily-details-grid-item">
-                  <label>Clouds:</label>
+                <div className="pb-1 flex justify-between items-center">
+                  <label className="font-semibold">Nuvens:</label>
                   <label>{item.clouds.all}%</label>
                 </div>
-                <div className="daily-details-grid-item">
-                  <label>Wind speed:</label>
+                <div className="pb-1 flex justify-between items-center">
+                  <label className="font-semibold"> Vento:</label>
                   <label>{item.wind.speed} m/s</label>
                 </div>
-                <div className="daily-details-grid-item">
-                  <label>Sea level:</label>
-                  <label>{item.main.sea_level}m</label>
-                </div>
-                <div className="daily-details-grid-item">
-                  <label>Feels like:</label>
+                <div className="pb-1 flex justify-between items-center">
+                  <label className="font-semibold">Sensação:</label>
                   <label>{item.main.feels_like}°C</label>
                 </div>
               </div>
@@ -106,8 +88,6 @@ const Forecast = ({ data }) => {
           </AccordionItem>
         ))}
       </Accordion>
-
-      <div class=""></div>
     </div>
   );
 };

@@ -34,10 +34,12 @@ function App() {
   console.log(forecast);
 
   return (
-    <div className="px-36 bg-slate-400 min-h-screen">
-      <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forecast data={forecast} />}
+    <div className="bg-slate-400 min-h-screen ">
+      <div className="h-screen flex flex-col items-center justify-center">
+        <Search onSearchChange={handleOnSearchChange} />
+        {currentWeather && <CurrentWeather data={currentWeather} />}
+        {forecast && <Forecast data={forecast} />}
+      </div>
     </div>
   );
 }

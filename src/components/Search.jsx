@@ -30,14 +30,13 @@ const Search = ({ onSearchChange }) => {
   };
 
   return (
-    <div className="">
+    <div className="w-full max-w-screen-sm">
       <AsyncPaginate
-        placehikder="Procurar"
+        placeholder="Procurar"
         debounceTimeout={600}
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
-        className="py-2"
       />
     </div>
   );
