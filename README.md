@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## 🧠 - Introdução
+O objetivo deste projeto foi criar uma aplicação web usando React e a API do OpenWeather para fornecer informações sobre o clima em diferentes cidades. A ideia do projeto surgiu da necessidade de ter acesso fácil e rápido a informações precisas sobre o clima em diferentes lugares.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 - Funcionalidades 
+- Acesso de dados em uma api
 
-## Available Scripts
+## 💭 - Metodologia
+Para criar a aplicação, foram seguidos os seguintes passos:
 
-In the project directory, you can run:
+- Criação do ambiente de desenvolvimento: foi utilizado o Create React App para criar a estrutura inicial da aplicação.
 
-### `npm start`
+- Configuração da API do OpenWeather: foi necessário criar uma conta no OpenWeather para obter uma chave de API para acessar os dados de clima. Foi utilizada a API de previsão de 5 dias para obter informações detalhadas sobre o clima em diferentes cidades.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Implementação da busca de cidades: foi criado um componente de busca de cidades para permitir que o usuário pesquise informações sobre o clima em diferentes lugares. O componente usa a API do OpenWeather para obter as informações de clima para a cidade selecionada pelo usuário.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Exibição dos dados de clima: foi criado um componente para exibir as informações de clima para a cidade selecionada pelo usuário. O componente exibe informações sobre a temperatura atual, a temperatura máxima e mínima para os próximos dias, a velocidade do vento e a umidade.
 
-### `npm test`
+## 🌱 - Conclusão
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto foi um sucesso e atingiu o objetivo de criar uma aplicação web para fornecer informações sobre o clima em diferentes cidades. A implementação da busca de cidades e exibição dos dados de clima foram realizadas com sucesso usando o React e a API do OpenWeather. Este projeto pode ser utilizado como base para projetos futuros de aplicações web que envolvam a utilização de APIs externas para obtenção de dados.
 
-### `npm run build`
+## 💬 - Contato
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Desenvolvido por Pedro Abel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email**: pedrooabell@gmail.com
+- **Linkedin**: https://www.linkedin.com/in/pedro-abel/
+- **Perfil do Github**: https://github.com/pedroabel
